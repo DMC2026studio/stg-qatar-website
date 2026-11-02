@@ -9,6 +9,9 @@ if (!existsSync(outDir)) {
 
 mkdirSync(outDir, { recursive: true });
 
+// GitHub Pages runs Jekyll by default, which ignores `_next` asset folders.
+writeFileSync(join(outDir, ".nojekyll"), "");
+
 const html = `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -25,4 +28,4 @@ const html = `<!DOCTYPE html>
 `;
 
 writeFileSync(join(outDir, "index.html"), html);
-console.log("Wrote out/index.html → ./en/");
+console.log("Wrote out/.nojekyll and out/index.html → ./en/");
