@@ -111,7 +111,7 @@ export const en: Dictionary = {
       "Refining, petrochemicals, power and water — the industries named in the approved company profile.",
     contactTitle: "Request a quote",
     alts: {
-      hero: "Canned motor pump assembly prepared for workshop repair.",
+      hero: "Overhauled multistage pump on the STG workshop floor in Doha.",
       plant: "Process plant at dusk with pipe racks and a spherical tank.",
       before: "Canned motor pump before repair.",
       after: "Canned motor pump after repair.",

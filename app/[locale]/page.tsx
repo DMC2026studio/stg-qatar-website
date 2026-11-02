@@ -67,7 +67,7 @@ export async function generateMetadata({
       path: "/",
       title: dict.meta.siteName,
       description: dict.home.metaDescription,
-      image: "/images/canned-motor-assembly.jpg",
+      image: "/images/workshop-after.jpg",
     }),
     title: dict.home.metaTitle,
   };
@@ -89,12 +89,12 @@ export default async function Home({
     <>
       <section className="relative overflow-hidden bg-deep min-h-[min(100svh-var(--header-height),42rem)] lg:min-h-[calc(100svh-var(--header-height))]">
         <Image
-          src="/images/canned-motor-assembly.jpg"
+          src="/images/workshop-after.jpg"
           alt={t.alts.hero}
           fill
           priority
           sizes="100vw"
-          className="object-cover object-center"
+          className="object-cover object-[center_40%]"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-deep/88 via-deep/70 to-deep/45 rtl:bg-gradient-to-l" />
         <Container className="relative grid min-h-[min(100svh-var(--header-height),42rem)] items-center gap-8 py-12 md:gap-10 md:py-16 lg:min-h-[calc(100svh-var(--header-height))] lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
