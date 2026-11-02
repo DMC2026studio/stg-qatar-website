@@ -1,0 +1,110 @@
+@import "tailwindcss";
+
+:root {
+  --petroleum: #0c3a2c;
+  --deep: #06251c;
+  --gold: #c4a24c;
+  --steel: #4a5159;
+  --sand: #f3ede0;
+  --paper: #ffffff;
+  --muted: #f5f6f7;
+  --line: #e5e7ea;
+  --danger: #7a2e2a;
+  --danger-soft: #f6eeeb;
+  --header-height: 4.75rem;
+  --radius: 1.25rem;
+}
+
+@theme inline {
+  --color-petroleum: var(--petroleum);
+  --color-deep: var(--deep);
+  --color-gold: var(--gold);
+  --color-steel: var(--steel);
+  --color-sand: var(--sand);
+  --color-paper: var(--paper);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --font-display: var(--font-space), "Space Grotesk", sans-serif;
+  --font-sans: var(--font-inter), Inter, sans-serif;
+  --font-arabic: var(--font-kufi), "Noto Kufi Arabic", sans-serif;
+  --radius-card: var(--radius);
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--header-height);
+}
+
+body {
+  background: var(--paper);
+  color: var(--deep);
+  font-family: var(--font-inter), Inter, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-space), "Space Grotesk", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.12;
+}
+
+html[lang="ar"] body,
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4 {
+  font-family: var(--font-kufi), "Noto Kufi Arabic", sans-serif;
+  letter-spacing: 0;
+}
+
+html[lang="ar"] body {
+  line-height: 1.85;
+}
+
+html[lang="ar"] h1,
+html[lang="ar"] h2,
+html[lang="ar"] h3,
+html[lang="ar"] h4 {
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+[lang="ar"] {
+  font-family: var(--font-kufi), "Noto Kufi Arabic", sans-serif;
+  letter-spacing: 0;
+  line-height: 1.85;
+}
+
+@media (max-width: 639px) {
+  :root {
+    --header-height: 4.25rem;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--gold);
+  color: var(--deep);
+}
+
+.latin {
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
