@@ -4,6 +4,7 @@ import { useState, type FormEvent, type ReactNode } from "react";
 import { Button } from "@/components/button";
 import { useLocale } from "@/components/locale-provider";
 import { cx } from "@/lib/cx";
+import { company } from "@/lib/site";
 
 type Fields = {
   name: string;
@@ -101,32 +102,34 @@ export function ContactForm({
       return;
     }
 
+    // Honeypot filled — pretend success, do not open mail client.
+    if (values.website.trim()) {
+      setNotice(dict.form.noticeSent);
+      setValues(empty);
+      return;
+    }
+
     setPending(true);
     try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: values.name,
-          company: values.company,
-          email: values.email,
-          phone: values.phone,
-          message: values.message,
-          website: values.website,
-          locale,
-        }),
-      });
-
-      const payload = (await response.json().catch(() => null)) as
-        | { ok?: boolean; delivered?: boolean; error?: string }
-        | null;
-
-      if (payload?.delivered) {
-        setNotice(dict.form.noticeSent);
-        setValues(empty);
-      } else {
-        setNotice(dict.form.noticeNotSent);
-      }
+      // Static GitHub Pages host: open the visitor's email client (no server API).
+      const subject = encodeURIComponent(
+        compact ? `STG enquiry — ${values.name.trim()}` : `STG contact — ${values.name.trim()}`,
+      );
+      const body = encodeURIComponent(
+        [
+          `Name: ${values.name.trim()}`,
+          values.company.trim() ? `Company: ${values.company.trim()}` : null,
+          `Email: ${values.email.trim()}`,
+          values.phone.trim() ? `Phone: ${values.phone.trim()}` : null,
+          values.message.trim() ? `\n${values.message.trim()}` : null,
+          `\nLocale: ${locale}`,
+        ]
+          .filter(Boolean)
+          .join("\n"),
+      );
+      window.location.href = `mailto:${company.email}?subject=${subject}&body=${body}`;
+      setNotice(dict.form.noticeSent);
+      setValues(empty);
     } catch {
       setNotice(dict.form.noticeNotSent);
     } finally {
