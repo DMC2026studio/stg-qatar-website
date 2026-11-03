@@ -1,7 +1,8 @@
 import type { Dictionary } from "@/lib/dictionaries/types";
 
-export function getNavItems(dict: Pick<Dictionary, "nav">) {
+export function getNavItems(dict: Pick<Dictionary, "nav" | "common">) {
   return [
+    { label: dict.common.home, href: "/" },
     { label: dict.nav.about, href: "/about" },
     { label: dict.nav.supplies, href: "/industrial-supplies" },
     { label: dict.nav.engineering, href: "/engineering-services" },

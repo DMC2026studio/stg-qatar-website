@@ -100,7 +100,7 @@ export default async function ProductsPage({
       <section className="bg-muted py-16 md:py-24">
         <Container>
           <div className="grid items-center gap-10 overflow-hidden rounded-[2rem] border border-line bg-white lg:grid-cols-2">
-            <div className="relative min-h-80 bg-muted">
+            <div className="relative min-h-80 bg-white">
               <Image
                 src="/images/canned-motor-cutaway.jpg"
                 alt={t.cutawayAlt}

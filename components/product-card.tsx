@@ -18,7 +18,7 @@ export function ProductCard({
 }) {
   return (
     <article className="flex h-full flex-col overflow-hidden rounded-[1.5rem] border border-line bg-white shadow-sm shadow-deep/5">
-      <div className="relative aspect-[4/3] bg-muted">
+      <div className="relative aspect-[4/3] bg-white">
         <Image
           src={image}
           alt={alt}

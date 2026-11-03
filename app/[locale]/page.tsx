@@ -67,7 +67,7 @@ export async function generateMetadata({
       path: "/",
       title: dict.meta.siteName,
       description: dict.home.metaDescription,
-      image: "/images/workshop-after.jpg",
+      image: "/images/plant-dusk.jpg",
     }),
     title: dict.home.metaTitle,
   };
@@ -89,15 +89,15 @@ export default async function Home({
     <>
       <section className="relative overflow-hidden bg-deep min-h-[min(100svh-var(--header-height),42rem)] lg:min-h-[calc(100svh-var(--header-height))]">
         <Image
-          src="/images/workshop-after.jpg"
+          src="/images/plant-dusk.jpg"
           alt={t.alts.hero}
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[center_40%]"
+          className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-deep/88 via-deep/70 to-deep/45 rtl:bg-gradient-to-l" />
-        <Container className="relative grid min-h-[min(100svh-var(--header-height),42rem)] items-center gap-8 py-12 md:gap-10 md:py-16 lg:min-h-[calc(100svh-var(--header-height))] lg:grid-cols-[1.1fr_0.9fr] lg:gap-12">
+        <div className="absolute inset-0 bg-gradient-to-r from-deep/90 via-deep/72 to-deep/40 rtl:bg-gradient-to-l" />
+        <Container className="relative flex min-h-[min(100svh-var(--header-height),42rem)] items-center py-14 md:py-20 lg:min-h-[calc(100svh-var(--header-height))]">
           <div className="max-w-2xl text-white">
             <p className="text-sm font-semibold tracking-wide text-gold">
               {dict.common.stgDohaQatar}
@@ -113,13 +113,6 @@ export default async function Home({
               <Button href={localePath(locale, "/engineering-services")} variant="secondary">
                 {dict.common.exploreCapabilities}
               </Button>
-            </div>
-          </div>
-          <div className="hidden rounded-[1.75rem] bg-white p-6 shadow-2xl shadow-black/20 lg:block md:p-7">
-            <h2 className="text-2xl text-deep">{t.heroFormTitle}</h2>
-            <p className="mt-2 text-sm text-steel">{t.heroFormLead}</p>
-            <div className="mt-5">
-              <ContactForm compact idPrefix="hero" />
             </div>
           </div>
         </Container>
@@ -233,7 +226,7 @@ export default async function Home({
             ))}
           </div>
           <div className="mt-12 grid items-center gap-8 overflow-hidden rounded-[2rem] border border-line bg-white lg:grid-cols-2">
-            <div className="relative min-h-72 bg-muted lg:min-h-full">
+            <div className="relative min-h-72 bg-white lg:min-h-full">
               <Image
                 src="/images/canned-motor-cutaway.jpg"
                 alt={t.alts.cutaway}
