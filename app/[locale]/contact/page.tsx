@@ -40,10 +40,8 @@ export default async function ContactPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        crumbs={[
-          { label: dict.common.home, href: localePath(locale, "/") },
-          { label: dict.nav.contact },
-        ]}
+        image="/images/seal-workshop-02.jpg"
+        imageAlt="Mechanical seal components prepared in the workshop."
       />
 
       <section className="py-16 md:py-24">

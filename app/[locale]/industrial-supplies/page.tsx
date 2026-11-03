@@ -47,16 +47,14 @@ export default async function IndustrialSuppliesPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        crumbs={[
-          { label: dict.common.home, href: localePath(locale, "/") },
-          { label: t.metaTitle },
-        ]}
+        image="/images/supply-steel.jpg"
+        imageAlt="Industrial stainless steel pipe and tube stock."
       >
         <div className="flex flex-wrap gap-3">
           <Button href={contactHref} variant="gold">
             {dict.common.requestQuote}
           </Button>
-          <Button href={localePath(locale, "/engineering-services")} variant="primary">
+          <Button href={localePath(locale, "/engineering-services")} variant="secondary">
             {dict.common.engineeringServices}
           </Button>
         </div>

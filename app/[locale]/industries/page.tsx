@@ -41,11 +41,7 @@ export default async function IndustriesPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        crumbs={[
-          { label: dict.common.home, href: localePath(locale, "/") },
-          { label: t.metaTitle },
-        ]}
-        image="/images/plant-dusk.jpg"
+        image="/images/hero-plant-alt.jpg"
         imageAlt={t.plantAlt}
       >
         <Button href={localePath(locale, "/contact")} variant="gold">

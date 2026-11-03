@@ -44,12 +44,8 @@ export default async function EngineeringServicesPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        crumbs={[
-          { label: dict.common.home, href: localePath(locale, "/") },
-          { label: t.metaTitle },
-        ]}
-        image="/images/canned-motor-assembly.jpg"
-        imageAlt={t.alts.assembly}
+        image="/images/seal-workshop-01.jpg"
+        imageAlt={t.alts.seals}
       >
         <Button href={localePath(locale, "/contact")} variant="gold">
           {dict.common.requestQuote}

@@ -48,16 +48,14 @@ export default async function ProductsPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        crumbs={[
-          { label: dict.common.home, href: localePath(locale, "/") },
-          { label: t.metaTitle },
-        ]}
+        image="/images/workshop-after.jpg"
+        imageAlt="Overhauled industrial pump ready for service."
       >
         <div className="flex flex-wrap gap-3">
           <Button href={contactHref} variant="gold">
             {dict.common.requestQuote}
           </Button>
-          <Button href={localePath(locale, "/engineering-services")} variant="primary">
+          <Button href={localePath(locale, "/engineering-services")} variant="secondary">
             {dict.common.workshopServices}
           </Button>
         </div>

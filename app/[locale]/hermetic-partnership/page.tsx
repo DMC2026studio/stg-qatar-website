@@ -43,16 +43,14 @@ export default async function HermeticPartnershipPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        crumbs={[
-          { label: dict.common.home, href: localePath(locale, "/") },
-          { label: t.metaTitle },
-        ]}
+        image="/images/canned-motor-cutaway.jpg"
+        imageAlt="Sectional cutaway of a multi-stage canned motor pump."
       >
         <div className="flex flex-wrap gap-3">
           <Button href={localePath(locale, "/contact")} variant="gold">
             {dict.common.discussCannedMotor}
           </Button>
-          <Button href={localePath(locale, "/engineering-services")} variant="primary">
+          <Button href={localePath(locale, "/engineering-services")} variant="secondary">
             {dict.common.workshopServices}
           </Button>
         </div>
