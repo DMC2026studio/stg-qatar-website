@@ -41,7 +41,7 @@ export default async function IndustriesPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/hero-plant-alt.jpg"
+        image="/images/heroes/hero-industries-plant.jpg"
         imageAlt={t.plantAlt}
       >
         <Button href={localePath(locale, "/contact")} variant="gold">

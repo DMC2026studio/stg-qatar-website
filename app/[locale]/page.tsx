@@ -67,7 +67,7 @@ export async function generateMetadata({
       path: "/",
       title: dict.meta.siteName,
       description: dict.home.metaDescription,
-      image: "/images/plant-dusk.jpg",
+      image: "/images/heroes/hero-home-refinery.jpg",
     }),
     title: dict.home.metaTitle,
   };
@@ -89,7 +89,7 @@ export default async function Home({
     <>
       <section className="relative overflow-hidden bg-deep min-h-[min(100svh-var(--header-height),42rem)] lg:min-h-[calc(100svh-var(--header-height))]">
         <Image
-          src="/images/plant-dusk.jpg"
+          src="/images/heroes/hero-home-refinery.jpg"
           alt={t.alts.hero}
           fill
           priority

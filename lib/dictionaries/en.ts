@@ -111,7 +111,7 @@ export const en: Dictionary = {
       "Refining, petrochemicals, power and water — the industries named in the approved company profile.",
     contactTitle: "Request a quote",
     alts: {
-      hero: "Industrial process plant at dusk with pipe racks and process units.",
+      hero: "Industrial refinery and process plant under an overcast sky.",
       plant: "Process plant at dusk with pipe racks and a spherical tank.",
       before: "Canned motor pump before repair.",
       after: "Canned motor pump after repair.",

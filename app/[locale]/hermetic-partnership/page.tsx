@@ -43,8 +43,8 @@ export default async function HermeticPartnershipPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/canned-motor-cutaway.jpg"
-        imageAlt="Sectional cutaway of a multi-stage canned motor pump."
+        image="/images/heroes/hero-hermetic-pump.jpg"
+        imageAlt="Process plant towers and pump infrastructure."
       >
         <div className="flex flex-wrap gap-3">
           <Button href={localePath(locale, "/contact")} variant="gold">

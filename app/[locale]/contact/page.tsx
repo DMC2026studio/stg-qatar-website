@@ -40,8 +40,8 @@ export default async function ContactPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/seal-workshop-02.jpg"
-        imageAlt="Mechanical seal components prepared in the workshop."
+        image="/images/heroes/hero-contact-control.jpg"
+        imageAlt="Industrial facility floor ready for client project discussions."
       />
 
       <section className="py-16 md:py-24">

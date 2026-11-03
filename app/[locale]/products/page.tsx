@@ -48,8 +48,8 @@ export default async function ProductsPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/workshop-after.jpg"
-        imageAlt="Overhauled industrial pump ready for service."
+        image="/images/heroes/hero-products-equipment.jpg"
+        imageAlt="Technician servicing industrial equipment in the workshop."
       >
         <div className="flex flex-wrap gap-3">
           <Button href={contactHref} variant="gold">

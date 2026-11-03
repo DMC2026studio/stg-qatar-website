@@ -47,8 +47,8 @@ export default async function IndustrialSuppliesPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/supply-steel.jpg"
-        imageAlt="Industrial stainless steel pipe and tube stock."
+        image="/images/heroes/hero-supplies-pipes.jpg"
+        imageAlt="Industrial warehouse and logistics facility for supply operations."
       >
         <div className="flex flex-wrap gap-3">
           <Button href={contactHref} variant="gold">

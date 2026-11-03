@@ -45,7 +45,7 @@ export default async function AboutPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/hero-plant.jpg"
+        image="/images/heroes/hero-about-facility.jpg"
         imageAlt={t.alts.plant}
       >
         <Button href={contactHref} variant="gold">

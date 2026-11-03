@@ -44,7 +44,7 @@ export default async function EngineeringServicesPage({
       <PageHero
         title={t.heroTitle}
         description={t.heroDescription}
-        image="/images/seal-workshop-01.jpg"
+        image="/images/heroes/hero-engineering-workshop.jpg"
         imageAlt={t.alts.seals}
       >
         <Button href={localePath(locale, "/contact")} variant="gold">
