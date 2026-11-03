@@ -228,11 +228,11 @@ export default async function Home({
           <div className="mt-12 grid items-center gap-8 overflow-hidden rounded-[2rem] border border-line bg-white lg:grid-cols-2">
             <div className="relative min-h-72 bg-white lg:min-h-full">
               <Image
-                src="/images/sections/section-assembly.jpg"
+                src="/images/canned-motor-cutaway.jpg"
                 alt={t.alts.cutaway}
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
-                className="object-cover"
+                className="object-contain p-6"
               />
             </div>
             <div className="p-6 md:p-10">
