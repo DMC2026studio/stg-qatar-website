@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://DMC2026studio.github.io/stg-qatar-website
+Sitemap: https://DMC2026studio.github.io/stg-qatar-website/sitemap.xml

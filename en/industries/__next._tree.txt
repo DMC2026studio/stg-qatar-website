@@ -1,0 +1,8 @@
+:HL["/stg-qatar-website/_next/static/chunks/2a27izm24mcy6.css","style"]
+:HL["/stg-qatar-website/_next/static/media/07c7676b89ed2778-s.p.2bn3s6zvc0dyp.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/stg-qatar-website/_next/static/media/237858b39a32779d-s.p.2cyn07wtgehh0.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/stg-qatar-website/_next/static/media/f5e6f786bcaa2be4-s.p.30d2r2x65bwdm.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":"industries","h":64,"c":"$Q3"}]]
+1:[["children",{"s":{"n":"locale","t":"d","k":"en","s":[]},"h":48,"c":"$Q2"}]]
+0:{"b":"Gux4QLJQjp5H3WOq8eNHb","t":{"t":{"s":"","h":80,"c":"$Q1"}}}
