@@ -138,7 +138,7 @@ export default async function Home({
             <div className="grid grid-cols-2 gap-4">
               <div className="relative col-span-2 aspect-[16/10] overflow-hidden rounded-[1.75rem]">
                 <Image
-                  src="/images/plant-dusk.jpg"
+                  src="/images/sections/section-plant-pipes.jpg"
                   alt={t.alts.plant}
                   fill
                   sizes="(min-width: 1024px) 40vw, 100vw"
@@ -147,7 +147,7 @@ export default async function Home({
               </div>
               <div className="relative aspect-square overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src="/images/workshop-before.jpg"
+                  src="/images/sections/section-workshop-tech.jpg"
                   alt={t.alts.before}
                   fill
                   sizes="20vw"
@@ -156,7 +156,7 @@ export default async function Home({
               </div>
               <div className="relative aspect-square overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src="/images/workshop-after.jpg"
+                  src="/images/sections/section-precision.jpg"
                   alt={t.alts.after}
                   fill
                   sizes="20vw"
@@ -228,11 +228,11 @@ export default async function Home({
           <div className="mt-12 grid items-center gap-8 overflow-hidden rounded-[2rem] border border-line bg-white lg:grid-cols-2">
             <div className="relative min-h-72 bg-white lg:min-h-full">
               <Image
-                src="/images/canned-motor-cutaway.jpg"
+                src="/images/sections/section-assembly.jpg"
                 alt={t.alts.cutaway}
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
-                className="object-contain p-6"
+                className="object-cover"
               />
             </div>
             <div className="p-6 md:p-10">
@@ -273,7 +273,7 @@ export default async function Home({
           </div>
           <div className="relative mt-10 aspect-[16/10] overflow-hidden rounded-[2rem] md:aspect-[21/9]">
             <Image
-              src="/images/canned-motor-assembly.jpg"
+              src="/images/sections/section-machinery.jpg"
               alt={t.alts.assembly}
               fill
               sizes="100vw"

@@ -75,7 +75,7 @@ export default async function AboutPage({
           <div className="grid grid-cols-2 gap-4">
             <div className="relative col-span-2 aspect-[16/10] overflow-hidden rounded-[1.75rem]">
               <Image
-                src="/images/canned-motor-assembly.jpg"
+                src="/images/sections/section-facility.jpg"
                 alt={t.alts.assembly}
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
@@ -84,7 +84,7 @@ export default async function AboutPage({
             </div>
             <div className="relative aspect-square overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/images/workshop-before.jpg"
+                src="/images/sections/section-workshop-tech.jpg"
                 alt={t.alts.before}
                 fill
                 sizes="20vw"
@@ -93,7 +93,7 @@ export default async function AboutPage({
             </div>
             <div className="relative aspect-square overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/images/workshop-after.jpg"
+                src="/images/sections/section-precision.jpg"
                 alt={t.alts.after}
                 fill
                 sizes="20vw"

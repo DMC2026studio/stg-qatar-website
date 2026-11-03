@@ -73,7 +73,7 @@ export default async function EngineeringServicesPage({
           <div className="grid grid-cols-2 gap-4">
             <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/images/workshop-before.jpg"
+                src="/images/sections/section-machinery.jpg"
                 alt={t.alts.before}
                 fill
                 sizes="30vw"
@@ -82,7 +82,7 @@ export default async function EngineeringServicesPage({
             </div>
             <div className="relative aspect-[4/3] overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/images/workshop-after.jpg"
+                src="/images/sections/section-assembly.jpg"
                 alt={t.alts.after}
                 fill
                 sizes="30vw"
@@ -91,7 +91,7 @@ export default async function EngineeringServicesPage({
             </div>
             <div className="relative col-span-2 aspect-[16/8] overflow-hidden rounded-[1.5rem]">
               <Image
-                src="/images/seal-workshop-01.jpg"
+                src="/images/sections/section-plant-pipes.jpg"
                 alt={t.alts.seals}
                 fill
                 sizes="(min-width: 1024px) 40vw, 100vw"
