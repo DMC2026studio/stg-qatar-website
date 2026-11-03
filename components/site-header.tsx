@@ -21,15 +21,15 @@ export function SiteHeader() {
       >
         {dict.common.skipToContent}
       </a>
-      <div className="relative mx-auto flex h-[var(--header-height)] max-w-6xl items-center gap-2 px-4 sm:gap-3 sm:px-5 md:gap-5 md:px-8">
+      <div className="relative mx-auto flex h-[var(--header-height)] max-w-7xl items-center gap-2 px-3 sm:px-4 md:px-6 lg:gap-3">
         <BrandLogo />
-        <div className="ms-auto flex min-w-0 items-center gap-2 sm:gap-3">
-          <nav aria-label="Primary" className="hidden items-center gap-x-5 xl:flex">
+        <div className="ms-auto flex min-w-0 items-center gap-1.5 sm:gap-2">
+          <nav aria-label="Primary" className="hidden items-center gap-x-1 lg:flex xl:gap-x-1.5">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={localePath(locale, item.href)}
-                className="text-sm font-medium text-steel hover:text-petroleum"
+                className="rounded-md px-2 py-1 text-[12px] font-medium leading-none text-steel hover:bg-muted hover:text-petroleum xl:px-2.5 xl:text-[13px]"
               >
                 {item.label}
               </Link>
@@ -37,7 +37,7 @@ export function SiteHeader() {
           </nav>
           <LanguageSwitcher />
           <div className="hidden sm:block">
-            <Button href={localePath(locale, "/contact")} variant="gold" className="px-4 py-2.5">
+            <Button href={localePath(locale, "/contact")} variant="gold" className="px-3 py-1.5 text-xs">
               {dict.common.requestQuote}
             </Button>
           </div>

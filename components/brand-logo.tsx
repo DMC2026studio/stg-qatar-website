@@ -31,8 +31,8 @@ export function BrandLogo({ tone = "light" }: { tone?: "light" | "dark" }) {
         priority={tone === "light"}
         className={
           arabic
-            ? "h-10 w-auto max-w-[42vw] sm:h-12 sm:max-w-[220px] md:max-w-none"
-            : "h-9 w-auto max-w-[48vw] sm:h-10 sm:max-w-[200px] md:h-11 md:max-w-none"
+            ? "h-8 w-auto max-w-[40vw] sm:h-9 sm:max-w-[190px]"
+            : "h-7 w-auto max-w-[44vw] sm:h-8 sm:max-w-[170px]"
         }
       />
     </Link>

@@ -11,7 +11,7 @@
   --line: #e5e7ea;
   --danger: #7a2e2a;
   --danger-soft: #f6eeeb;
-  --header-height: 4.75rem;
+  --header-height: 3.5rem;
   --radius: 1.25rem;
 }
 
@@ -84,7 +84,7 @@ html[lang="ar"] h4 {
 
 @media (max-width: 639px) {
   :root {
-    --header-height: 4.25rem;
+    --header-height: 3.25rem;
   }
 }
 

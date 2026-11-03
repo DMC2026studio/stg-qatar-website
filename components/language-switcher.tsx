@@ -32,7 +32,7 @@ export function LanguageSwitcher() {
             hrefLang={option.lang}
             aria-current={active ? "page" : undefined}
             className={cx(
-              "inline-flex h-8 items-center px-2.5 text-xs font-semibold tracking-wide",
+              "inline-flex h-7 items-center px-2 text-[11px] font-semibold tracking-wide",
               active ? "bg-petroleum text-white" : "text-steel hover:text-petroleum",
             )}
             onClick={() => {

@@ -23,10 +23,10 @@ export function MobileNav() {
   }, [open]);
 
   return (
-    <div className="xl:hidden">
+    <div className="lg:hidden">
       <button
         type="button"
-        className="inline-flex size-11 items-center justify-center rounded-full border border-line text-petroleum"
+        className="inline-flex size-8 items-center justify-center rounded-full border border-line text-petroleum"
         aria-expanded={open}
         aria-controls={panelId}
         onClick={() => setOpen((value) => !value)}
