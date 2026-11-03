@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
   output: "export",
   trailingSlash: true,
   basePath: useGithubPages ? repoBasePath : undefined,
+  env: {
+    // Ensures next/image public assets resolve under the GitHub Pages subpath.
+    NEXT_PUBLIC_BASE_PATH: useGithubPages ? repoBasePath : "",
+  },
   poweredByHeader: false,
   turbopack: {
     root: process.cwd(),
@@ -19,7 +23,8 @@ const nextConfig: NextConfig = {
     },
   },
   images: {
-    unoptimized: true,
+    loader: "custom",
+    loaderFile: "./image-loader.ts",
   },
 };
 
